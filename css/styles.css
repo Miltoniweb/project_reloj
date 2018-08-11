@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  background-color: #00303D;
+}
+
+/* ----------------------------- */
+
+.content-reloj{
+  width: 90%;
+  margin: 2rem;
+  text-align: center;
+}
+
+.inner-wrap{
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.show-fecha, .show-reloj{
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+  .show-fecha > div, .show-reloj > div {
+    margin-right: .2rem;
+  }
+
+
+.show-reloj{ 
+  margin-bottom: 0;
+  font-size: 4rem; 
+}
+
+  .current-time{
+    align-self: center; 
+    font-size: 1.5rem;
+  }
+
+@media screen and (min-width : 420px) {
+  .content-reloj{
+    width: 60%;
+  }
+}
+@media screen and (min-width : 740px) {
+  .content-reloj{
+    width: 50%;
+  }
+}
+@media screen and (min-width : 1024px) {
+  .content-reloj{
+    width: 40%;
+  }
+}
+
